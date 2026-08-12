@@ -1,10 +1,7 @@
 # Mini Projeto - Análise de Dados com Python | Módulo 1
 Felipe Busarello
-
 Curso: Análise de Dados com Python
-
 Turma: 05 - 2026
-
 Professor: Cláudio Neves
 
 
@@ -148,7 +145,7 @@ Mini_Projeto_Felipe_Busarello/
 ### 1. Clonar o Repositório
 No terminal, execute:
 ```
-git clone https://github.com/FelipeBusa/curso-sctec.git
+git clone https://github.com/FelipeBusa/mini_projeto_turma05.git
 ```
 
 Depois, acesse a pasta do projeto:
