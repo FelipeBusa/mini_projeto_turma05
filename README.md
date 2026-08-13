@@ -1,8 +1,8 @@
 # Mini Projeto - Análise de Dados com Python | Módulo 1
-Felipe Busarello
-Curso: Análise de Dados com Python
-Turma: 05 - 2026
-Professor: Cláudio Neves
+**Felipe Busarello**  
+**Curso:** Análise de Dados com Python  
+**Turma:** 05 - 2026  
+**Professor:** Cláudio Neves
 
 
 ## 📌 Sobre o Projeto
@@ -12,8 +12,7 @@ O projeto tem como objetivo aplicar, de forma prática, os conhecimentos adquiri
 
 A atividade utiliza o arquivo BaseVarejo.csv, composta por informações relacionadas a compras realizadas por clientes de uma rede de supermercados.
 
-O projeto contempla as principais etapas de um processo de análise exploratória:
-
+O projeto contempla as principais etapas de um processo de análise exploratória:  
 **Carregamento → Tratamento → Exploração → Análise → Visualização → Interpretação**
 
 
@@ -21,7 +20,7 @@ O projeto contempla as principais etapas de um processo de análise exploratóri
 
 O principal objetivo deste projeto é realizar uma Análise Exploratória de Dados (AED) utilizando Python, identificando características, padrões, possíveis inconsistências e relações existentes nos dados.
 
-Durante o desenvolvimento serão realizadas atividades de:
+Durante o desenvolvimento serão realizadas atividades de:  
 * Extração e carregamento dos dados;
 * Inspeção inicial da base;
 * Identificação e tratamento de inconsistências;
@@ -38,16 +37,16 @@ Durante o desenvolvimento serão realizadas atividades de:
 
 
 ## 📊 Base de Dados
-A base utilizada no projeto é a **Base Varejo**, disponbilizada no Kaggle.
+A base utilizada no projeto é a **Base Varejo**, disponbilizada no Kaggle.  
 
-Fonte: Kaggle
-Dataset: [Base Varejo](https://www.kaggle.com/datasets/namespaiva/base-varejo/data) 
+Fonte: Kaggle  
+Dataset: [Base Varejo](https://www.kaggle.com/datasets/namespaiva/base-varejo/data)  
 
-De acordo com a documentação fornecida para a atividade, a base representa informações de compras realizadas por clientes de uma rede de supermercados no período de 2010 a 2022.
+De acordo com a documentação fornecida para a atividade, a base representa informações de compras realizadas por clientes de uma rede de supermercados no período de 2010 a 2022.  
 
 A documentação descreve os seguintes campos principais: `DATA`, `CO_ID`, `CL_ID`, `CL_GENERO`, `CL_EC`, `CL_FHL`, `CL_SEG`, `PR_ID`, `PR_CAT` e `PR_NOME`.
 
-**🗂️ Dicionário de Dados**
+**🗂️ Dicionário de Dados**  
 Campo   Descrição
 * `DATA`	Data da compra
 * `CO_ID`	Identificação da compra / número da nota fiscal
@@ -61,9 +60,9 @@ Campo   Descrição
 * `PR_NOME`	Nome do produto
 
 
-**Estado Civil**
 
-A variável CL_EC utiliza códigos numéricos para representar o estado civil:
+**Estado Civil**  
+A variável CL_EC utiliza códigos numéricos para representar o estado civil:  
 
 | Código | Descrição |
 |---------|----------|
@@ -160,24 +159,18 @@ Caso necessário, instale as bibliotecas utilizadas:
 ```
 
 ### 3. Executar o Projeto
-Abra o notebook:
-
-Mini_Projeto_Felipe_Busarello.ipynb
-
+Abra o notebook:  
+`Mini_Projeto_Felipe_Busarello.ipynb`  
 O projeto pode ser executado utilizando VS Code.
+
 
 ## 🎯 Próximos Passos
 
+
 ## 👨‍💻 Autor
-
-Felipe Busarello
-
-Curso: Análise de Dados com Python
-
-Turma: 05 — 2026
-
-Professor: Cláudio Neves
-
-Projeto: Mini Projeto — Módulo 1
-
-Data: 17/08/2026
+**Felipe Busarello**  
+**Curso:** Análise de Dados com Python  
+**Turma:** 05 - 2026  
+**Professor:** Cláudio Neves  
+**Projeto:** Mini Projeto — Módulo 1  
+**Data:** 17/08/2026
