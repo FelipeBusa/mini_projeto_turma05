@@ -84,6 +84,7 @@ Os valores foram substituídos por:
 |---|---|
 | `PR_CAT` | `Sem Categoria` |
 | `PR_NOME` | `Sem Nome` |
+
 Essa abordagem preservou os registros sem eliminar informações válidas das demais colunas.
 
 ### Tipos de dados  
@@ -139,6 +140,7 @@ Em 2022 houve uma redução significativa no volume registrado.
 | PET | 28.553 | 3,89% |
 | ACESSORIOS | 12.871 | 1,75% |
 | Sem Categoria | 3.228 | 0,44% |
+
 As categorias **Alimentos, Higiene e Limpeza** concentram aproximadamente **88,69% dos registros**.  
 
 
