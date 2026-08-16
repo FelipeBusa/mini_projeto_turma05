@@ -10,7 +10,7 @@ Este repositório apresenta o **Mini Projeto Avaliativo do Módulo 1** do curso 
 
 O projeto tem como objetivo aplicar, de forma prática, os conhecimentos adquiridos durante o módulo no processo de **Extração, Transformação e Análise de dados**, utilizando Python para preparar, explorar e analisar uma base de dados de varejo.
 
-A atividade utiliza o arquivo `BaseVarejo.csv`, composto por informações relacionadas a compras realizadas por clientes de uma rede de supermercados.
+A atividade utiliza o arquivo `Base Varejo.csv`, composto por informações relacionadas a compras realizadas por clientes de uma rede de supermercados.
 
 O projeto contempla as principais etapas de uma análise exploratória de dados:  
 **Carregamento → Inspeção → Tratamento → Análise → Interpretação**
@@ -79,7 +79,7 @@ A variável `CL_EC` utiliza códigos numéricos para representar o estado civil:
 Antes da realização da análise exploratória, os dados passam por uma etapa de inspeção e preparação.
 
 ### 1. Extração
-O arquivo `BaseVarejo.csv` é carregado utilizando o módulo `csv` do Python, por meio do `csv.DictReader`, e também utilizando a biblioteca Panda.
+O arquivo `Base Varejo.csv` é carregado utilizando o módulo `csv` do Python, por meio do `csv.DictReader`, e também utilizando a biblioteca Panda.
 
 Durante a importação inicial com `csv.DictReader`, foi identificado que o arquivo utilizava `;` como delimitador. O delimitador foi então configurado corretamente para realizar a leitura estruturada dos campos.
 
@@ -119,6 +119,42 @@ A conversão da data foi realizada com validação de possíveis datas inválida
 Foi realizada uma análise para identificação de registros duplicados.
 
 Na primeira verificação foram identificados **96.553 registros duplicados**, que serão avaliados e tratados antes da geração da base final utilizada nas análises.
+
+
+**Distribuição Filhos por Registro**  
+A análise da variável `CL_FHL`, que representa o número de filhos do cliente, apresentou a seguinte distribuição:  
+| Número de filhos | Registros | Percentual |
+|---:|---:|---:|
+| 0 | 384.986 | 52,49% |
+| 1 | 90.845 | 12,39% |
+| 2 | 94.168 | 12,84% |
+| 3 | 92.407 | 12,60% |
+| 4 | 71.041 | 9,69% |
+| **Total** | **733.447** | **100%** |  
+
+Os resultados indicam uma concentração significativa de registros associados a clientes sem filhos, que representam **52,49% da base analisada**.  
+Considerando clientes com até dois filhos, essa participação chega a **77,72% dos registros**. Entre as categorias de 1 a 3 filhos, a distribuição apresenta valores relativamente próximos, variando entre 12,39% e 12,84%.  
+A estatística descritiva também apresentou **média de 1,15 filhos**, **mediana de 0** e **moda de 0**, reforçando a predominância da categoria de clientes sem filhos.
+
+
+**Evolução temporal**  
+O volume de registros apresentou crescimento entre 2019 e 2021, passando de 176.103 para 216.813 registros. Em 2022, entretanto, houve redução de aproximadamente 31,9% em relação ao ano anterior. O mês de setembro de 2022 apresentou o menor volume da base, com apenas 1.297 registros, indicando a necessidade de investigar possíveis fatores que expliquem essa redução.
+
+
+**Distribuição por Categoria**
+A categoria Alimentos representa 52,38% dos registros, sendo a principal categoria da base.  
+As categorias Alimentos, Higiene e Limpeza concentram juntas 88,69% dos registros, indicando forte concentração do volume analisado em produtos dessas três categorias.  
+Apenas 0,44% dos registros foram classificados como "Sem Categoria", após o tratamento dos valores #N/D, representando uma parcela reduzida da base.
+
+
+**Distribuição de Filhos por Categoria**
+A distribuição das categorias de produtos apresentou comportamento bastante semelhante entre os diferentes grupos de número de filhos.  
+A categoria Alimentos manteve participação próxima de 52% em todos os grupos, enquanto Higiene e Limpeza permaneceram próximas de 19% e 18%, respectivamente.  
+Dessa forma, não foram observadas diferenças relevantes na distribuição das categorias de produtos associadas ao número de filhos.
+
+**Filhos por Segmento Econômico**
+O segmento B apresentou predominância em todos os grupos de número de filhos, variando entre 60,31% e 70,11% dos registros.  
+O segmento C apresentou maior participação entre os registros associados a clientes com quatro filhos (34,00%), enquanto o segmento A permaneceu como o menos representativo em todos os grupos.
 
 ### 3. Carga
 Após as etapas de preparação e tratamento, a base final será utilizada para a **Análise Exploratória de Dados (AED)**, geração das estatísticas, agrupamentos e identificação dos principais insights.
@@ -186,7 +222,7 @@ O projeto foi desenvolvido em Python (versção 3.13.14), utilizando as seguinte
 Mini_Projeto_Felipe_Busarello/
 │ 
 ├── 📂 dataset/
-│   └── BaseVarejo.csv
+│   └── Base Varejo.csv
 │
 ├── 📂 graficos/
 │   └── *Complementar*
