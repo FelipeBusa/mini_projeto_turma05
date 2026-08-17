@@ -229,7 +229,10 @@ mini_projeto_turma05/
 │   ├── grafico1_evolucao_registros_ano.png
 │   ├── grafico2_registro_por_categoria_produto.png
 │   ├── grafico3_registros_por_filho.png
-│   └── grafico4_filhos_segmento_economico.png
+│   ├── grafico4_filhos_segmento_economico.png
+│   ├── grafico5_evolucao_registros_mes_ano.png
+│   ├── grafico6_distribuicao_registros_genero.png
+│   └── grafico7_top5_produtos_segmento_economico.png
 │
 ├── 📓 Mini_Projeto_Felipe_Busarello.ipynb
 ├── 📄 README.md
