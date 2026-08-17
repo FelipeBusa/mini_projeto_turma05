@@ -10,13 +10,14 @@
 Este projeto foi desenvolvido como atividade avaliativa do **Módulo 1 do curso Análise de Dados com Python**.  
 O objetivo é realizar uma **Análise Exploratória de Dados (AED)** sobre uma base de dados de varejo, aplicando conceitos de:  
 - Extração e carregamento de dados;
-- Inspeção e validação;
+- Verificação e validação;
 - Limpeza e transformação;
 - Estatística descritiva;
 - Agrupamento de dados;
 - Tabelas dinâmicas;
 - Visualização;
 - Interpretação dos resultados.  
+
 O projeto utiliza Python, Pandas, NumPy, Matplotlib e o módulo `csv`.
 
 
@@ -72,6 +73,7 @@ Foram identificadas quatro colunas completamente vazias:
 - `Unnamed: 11`
 - `Unnamed: 12`
 - `Unnamed: 13`
+
 Essas colunas foram removidas por não apresentarem informações úteis para a análise.
 
 ### Valores `#N/D`  
@@ -84,8 +86,9 @@ Os valores foram substituídos por:
 |---|---|
 | `PR_CAT` | `Sem Categoria` |
 | `PR_NOME` | `Sem Nome` |
-
+  
 Essa abordagem preservou os registros sem eliminar informações válidas das demais colunas.
+
 
 ### Tipos de dados  
 Foram realizados os seguintes ajustes:  
@@ -93,7 +96,9 @@ Foram realizados os seguintes ajustes:
 - `CL_ID` >> `string`
 - `PR_ID` >> `string`
 - `DATA` >> `datetime`
+  
 A coluna `DATA` também foi validada após a conversão e não apresentou datas inválidas.  
+
 
 ### Registros duplicados  
 Foram identificados: **96.553 registros duplicados.**  
