@@ -182,6 +182,15 @@ Os principais gráficos desenvolvidos estão disponíveis na pasta `Graficos/`.
 ### Filhos × Segmento econômico  
 ![Filhos por segmento](Graficos/grafico4_filhos_segmento_economico.png)  
 
+### Registros por mês/ano
+![Mês ano](Graficos/grafico5_evolucao_registros_mes_ano.png.png) 
+
+### Registros por Gênero
+![Registros por Gênero](Graficos/grafico6_distribuicao_registros_genero.png) 
+
+### Produtos por Segmento Econômico  
+![Produto por segmento](Graficos/grafico7_top5_produtos_segmento_economico.png) 
+
 
 # 💡 Principais Insights
 1. **2021 foi o ano com maior volume de registros**, representando 29,56% da base analisada. Em 2022 houve uma redução significativa no volume de registros.  
