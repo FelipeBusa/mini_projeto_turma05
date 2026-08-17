@@ -183,7 +183,7 @@ Os principais gráficos desenvolvidos estão disponíveis na pasta `Graficos/`.
 ![Filhos por segmento](Graficos/grafico4_filhos_segmento_economico.png)  
 
 ### Registros por mês/ano
-![Mês ano](Graficos/grafico5_evolucao_registros_mes_ano.png.png) 
+![Mês ano](Graficos/grafico5_evolucao_registros_mes_ano.png) 
 
 ### Registros por Gênero
 ![Registros por Gênero](Graficos/grafico6_distribuicao_registros_genero.png) 
