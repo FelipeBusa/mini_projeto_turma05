@@ -39,7 +39,7 @@ O projeto tem como objetivos:
 Foi utilizada a base **Base Varejo**, disponibilizada no Kaggle.  
 **Fonte:** Kaggle  
 **Dataset:** [Base Varejo](https://www.kaggle.com/datasets/namespaiva/base-varejo/data)  
-A base contém informações relacionadas a compras realizadas por clientes de uma rede de supermercados.
+A base contém registros de itens associados a compras realizadas por clientes de uma rede de supermercados. 
 
 
 ### Principais campos
@@ -98,6 +98,14 @@ Foram realizados os seguintes ajustes:
 - `DATA` >> `datetime`
   
 A coluna `DATA` também foi validada após a conversão e não apresentou datas inválidas.  
+
+
+### Granularidade da base
+Após o processo de limpeza, foi realizada uma análise para compreender o que cada registro representa na base.   
+Foram identificadas **18.471 compras distintas (`CO_ID`)** em um total de **733.447 registros**. Cada compra possui, em média, **39,7 itens**, com quantidade variando de 1 a 81 itens por compra.   
+Também foi verificado que cada `CO_ID` está associado a **um único cliente (`CL_ID`) e a uma única data (`DATA`)**.   
+Dessa forma, a base possui granularidade de **item por compra**: cada linha representa um item associado a uma compra, enquanto `CO_ID` identifica a compra.  
+Essa distinção é importante para a interpretação das análises, pois as contagens baseadas no número de linhas representam o **volume de itens/registros**, e não necessariamente a quantidade de compras ou de clientes.
 
 
 ### Registros duplicados  
@@ -200,7 +208,7 @@ Os principais gráficos desenvolvidos estão disponíveis na pasta `Graficos/`.
 5. **O segmento econômico B predomina em todos os grupos de número de filhos**, apresentando participação superior aos segmentos A e C.  
 6. **As distribuições por categoria são semelhantes entre os gêneros F e M e entre os diferentes grupos de número de filhos**, não indicando diferenças relevantes nesses cruzamentos.
 
-> **Observação:** as análises desta seção são realizadas sobre registros de compras. Um mesmo cliente pode aparecer diversas vezes na base, portanto os percentuais não representam necessariamente percentuais de clientes únicos.
+> **Observação:** as análises desta seção são realizadas sobre os registros de itens da base. Uma mesma compra pode possuir vários itens e um mesmo cliente pode realizar diversas compras. Portanto, os percentuais apresentados não representam necessariamente percentuais de compras únicas ou de clientes únicos.
 
 
 # 🧠 Reflexão sobre ETL e Qualidade dos Dados
